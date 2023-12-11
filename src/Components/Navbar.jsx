@@ -42,7 +42,7 @@ const Navbar = ({ setResult }) => {
       {/* <Input label="City" variant="standard" />
       <Input label="Country" variant="standard" /> */}
       <Getbutton variant="contained" onClick={GetWeatherInfo}>
-        Get Weather Details
+        Get Weather
       </Getbutton>
     </Container>
   );
