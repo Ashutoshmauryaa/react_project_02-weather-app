@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Box, styled } from "@mui/material";
 import Sunset from "../assests/Images/sunset.jpg";
-import Weather from "../assests/Images/weather.jpeg";
 import Navbar from "../Components/Navbar";
 import Information from "../Components/Information";
 const Component = styled(Box)({

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Box, Button, InputBase, styled } from "@mui/material";
-import TextField from "@mui/material/TextField";
 import { getWeather } from "../Services/api";
 const Container = styled(Box)({
   backgroundColor: "#445A6F",
@@ -18,14 +17,14 @@ const Navbar = ({ setResult }) => {
   const [data, setData] = useState({ city: "", country: "" });
 
   const handleChange = async (e) => {
-    if (e.target.value != "") {
+    if (e.target.value !== "") {
       setData({ ...data, [e.target.name]: e.target.value });
     } else {
       setResult(null);
     }
   };
   const GetWeatherInfo = async () => {
-    if (data.city || data.country != "") {
+    if (data.city || data.country !== "") {
       let response = await getWeather(data.city, data.country);
       setResult(response);
     } else {
@@ -43,7 +42,7 @@ const Navbar = ({ setResult }) => {
       {/* <Input label="City" variant="standard" />
       <Input label="Country" variant="standard" /> */}
       <Getbutton variant="contained" onClick={GetWeatherInfo}>
-        Get Weather
+        Get Weather Details
       </Getbutton>
     </Container>
   );

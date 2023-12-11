@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, styled, typographyClasses } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 import {
   LocationOn,
   SettingsBrightness,
